@@ -1,0 +1,65 @@
+/* New Responsive CSS File */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+    max-width: 85%;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px rgb(0, 255, 0);
+}
+
+.about p {
+    font-size: 1.1em;
+    text-shadow: 0 0 8px rgb(0, 255, 0), 0 0 16px rgb(0, 255, 0);
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about {
+        max-width: 95%;
+    }
+    .about h1 {
+        font-size: 1.8em;
+    }
+    .about p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        width: 100%;
+        padding: 15px;
+    }
+    .about h1 {
+        font-size: 1.6em;
+    }
+    .about p {
+        font-size: 0.9em;
+    }
+}
